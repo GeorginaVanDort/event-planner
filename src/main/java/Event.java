@@ -37,4 +37,9 @@ public class Event {
     Integer totalFoodPrice = mGuests*mFoodPrice;
     return totalFoodPrice;
   }
+
+  public Integer getTotalBeveragePrice() {
+    Integer totalBeveragePrice = mGuests*mBeveragePrice;
+    return totalBeveragePrice;
+  }
 }
