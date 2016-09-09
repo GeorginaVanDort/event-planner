@@ -33,4 +33,9 @@ public class Event {
   public Integer getWaitStaffNumber() {
     return mWaitStaffNumber;
   }
+
+  public Integer getTotalFoodPrice() {
+    Integer totalFoodPrice = mGuests*mFoodPrice;
+    return totalFoodPrice;
+  }
 }

@@ -21,5 +21,10 @@ public class EventTest {
       assertEquals(25, (int) testEvent.getFoodPrice());
     }
 
+  @Test
+    public void getTotalFoodPrice_returnTotalFoodPrice_Integer() {
+      Event testEvent = new Event(12, 25, 10, 300, 5);
+      assertEquals(300, (int) testEvent.getTotalFoodPrice());
+    }
 
 }
