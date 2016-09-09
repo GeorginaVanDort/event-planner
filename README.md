@@ -7,9 +7,13 @@ This is an command line app that prompts the user for input about an event and c
 
 ### Specs and Behavior
 
-1. Create an instance of an event
-2. Return the number of people
-3.
+1. Prompt use for information about their intended event  
+2. Create an instance of an event 
+3. Return the number of people
+4. Return total cost of food
+5. Return total cost of beverages
+6. Return total cost of the event
+7. Display event details for user to review.
 
 ## Setup/Installation
 * Clone directory
