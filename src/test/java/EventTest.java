@@ -38,4 +38,9 @@ public class EventTest {
       Event testEvent = new Event(12, 25, 10, 300, 5);
       assertEquals(500, (int) testEvent.getTotalWaitStaffPrice());
     }
+  @Test
+    public void getTotalPrice_calculateTotalPrice_Integer() {
+      Event testEvent = new Event(12, 25, 10, 300, 5);
+      assertEquals(1220, (int) testEvent.getTotalPrice());
+    }
 }

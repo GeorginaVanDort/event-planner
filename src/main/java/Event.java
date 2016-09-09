@@ -4,6 +4,11 @@ public class Event {
   private Integer mBeveragePrice;
   private Integer mEntertainmentPrice;
   private Integer mWaitStaffNumber;
+  private Integer mTotalFoodPrice;
+  private Integer mTotalBeveragePrice;
+  private Integer mTotalWaitStaffPrice;
+  private Integer mTotalPrice;
+
 
   public Event (Integer guests, Integer foodPrice, Integer beveragePrice, Integer entertainmentPrice, Integer waitStaffNumber) {
     mGuests = guests;
@@ -34,17 +39,22 @@ public class Event {
   }
 
   public Integer getTotalFoodPrice() {
-    Integer totalFoodPrice = mGuests*mFoodPrice;
-    return totalFoodPrice;
+    mTotalFoodPrice = mGuests*mFoodPrice;
+    return mTotalFoodPrice;
   }
 
   public Integer getTotalBeveragePrice() {
-    Integer totalBeveragePrice = mGuests*mBeveragePrice;
-    return totalBeveragePrice;
+    mTotalBeveragePrice = mGuests*mBeveragePrice;
+    return mTotalBeveragePrice;
   }
 
   public Integer getTotalWaitStaffPrice() {
-    Integer totalWaitStaffPrice = mWaitStaffNumber*100;
-    return totalWaitStaffPrice;
+    mTotalWaitStaffPrice = mWaitStaffNumber*100;
+    return mTotalWaitStaffPrice;
+  }
+
+  public Integer getTotalPrice() {
+    mTotalPrice = (mGuests*mFoodPrice) + (mGuests*mBeveragePrice) + (mWaitStaffNumber*100) + mEntertainmentPrice;
+    return mTotalPrice;
   }
 }
