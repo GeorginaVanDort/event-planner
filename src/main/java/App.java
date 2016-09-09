@@ -47,7 +47,7 @@ public class App {
     Integer totalDrinks = event.getTotalBeveragePrice();
     Integer totalPrice = event.getTotalPrice();
 
-    c.printf("Thank you! Your event details are as follows:\n Total Catering Price is $%d\n Total Beverages Price is $%d\nBand will cost $%d\n Total Wait Staff Cost is $%d\nTotal Price including all options is $%d\n", totalFood, totalDrinks, band, totalWaiters, totalPrice);
+    c.printf("Thank you! Your event details are as follows:\n Total Catering Price is $%d\n Total Beverages Price is $%d\n Band will cost $%d\n Total Wait Staff cost is $%d\nTotal Price including all options is $%d\n", totalFood, totalDrinks, band, totalWaiters, totalPrice);
     c.printf("Thank you for using Event-o-Matic! Please type 'java App' to plan another event. Good Bye!");
   }
 
