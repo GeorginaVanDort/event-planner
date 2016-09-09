@@ -5,7 +5,6 @@ public class Event {
   private Integer mEntertainmentPrice;
   private Integer mWaitStaffNumber;
 
-//Constructor//
   public Event (Integer guests, Integer foodPrice, Integer beveragePrice, Integer entertainmentPrice, Integer waitStaffNumber) {
     mGuests = guests;
     mFoodPrice = foodPrice;

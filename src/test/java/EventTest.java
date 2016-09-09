@@ -27,4 +27,9 @@ public class EventTest {
       assertEquals(300, (int) testEvent.getTotalFoodPrice());
     }
 
+  @Test
+    public void getTotalBeveragePrice_returnTotalBeveragePrice_Integer() {
+      Event testEvent = new Event(12, 25, 10, 300, 5);
+      assertEquals(120, (int) testEvent.getTotalBeveragePrice());
+    }
 }
