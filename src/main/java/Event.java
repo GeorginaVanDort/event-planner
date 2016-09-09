@@ -42,4 +42,9 @@ public class Event {
     Integer totalBeveragePrice = mGuests*mBeveragePrice;
     return totalBeveragePrice;
   }
+
+  public Integer getTotalWaitStaffPrice() {
+    Integer totalWaitStaffPrice = mWaitStaffNumber*100;
+    return totalWaitStaffPrice;
+  }
 }

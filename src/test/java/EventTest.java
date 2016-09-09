@@ -22,14 +22,20 @@ public class EventTest {
     }
 
   @Test
-    public void getTotalFoodPrice_returnTotalFoodPrice_Integer() {
+    public void getTotalFoodPrice_calculateTotalFoodPrice_Integer() {
       Event testEvent = new Event(12, 25, 10, 300, 5);
       assertEquals(300, (int) testEvent.getTotalFoodPrice());
     }
 
   @Test
-    public void getTotalBeveragePrice_returnTotalBeveragePrice_Integer() {
+    public void getTotalBeveragePrice_calculateTotalBeveragePrice_Integer() {
       Event testEvent = new Event(12, 25, 10, 300, 5);
       assertEquals(120, (int) testEvent.getTotalBeveragePrice());
+    }
+
+  @Test
+    public void getTotalWaitStaffPrice_calculateTotalWaitStaffPrice_Integer() {
+      Event testEvent = new Event(12, 25, 10, 300, 5);
+      assertEquals(500, (int) testEvent.getTotalWaitStaffPrice());
     }
 }
