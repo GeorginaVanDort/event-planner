@@ -13,4 +13,10 @@ public class Event {
     mEntertainmentPrice = entertainmentPrice;
     mWaitStaffNumber = waitStaffNumber;
   }
+
+  public Integer getGuests() {
+    return mGuests;
+  }
+
+
 }
