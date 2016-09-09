@@ -18,5 +18,19 @@ public class Event {
     return mGuests;
   }
 
+  public Integer getFoodPrice() {
+      return mFoodPrice;
+    }
 
+  public Integer getBeveragePrice() {
+    return mBeveragePrice;
+  }
+
+  public Integer getEntertainmentPrice() {
+    return mEntertainmentPrice;
+  }
+
+  public Integer getWaitStaffNumber() {
+    return mWaitStaffNumber;
+  }
 }

@@ -9,11 +9,17 @@ public class EventTest {
       assertEquals(true, testEvent instanceof Event);
     }
 
-    @Test
-      public void getGuests_returnNumberOfGuests_Integer() {
-        Event testEvent = new Event(12, 25, 10, 300, 5);
-        assertEquals(12, (int) testEvent.getGuests());
-      }
+  @Test
+    public void getGuests_returnNumberOfGuests_Integer() {
+      Event testEvent = new Event(12, 25, 10, 300, 5);
+      assertEquals(12, (int) testEvent.getGuests());
+    }
+
+  @Test
+    public void getFoodPrice_returnFoodPrice_Integer() {
+      Event testEvent = new Event(12, 25, 10, 300, 5);
+      assertEquals(25, (int) testEvent.getFoodPrice());
+    }
 
 
 }
